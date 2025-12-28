@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner - Plan Your Perfect Week</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><i class="fas fa-utensils"></i> Meal Planner</h1>
+            <p>Plan your meals, save time, and eat better</p>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#weekly-plan" class="nav-link active"><i class="fas fa-calendar-week"></i> Weekly Plan</a></li>
+                <li><a href="#meal-database" class="nav-link"><i class="fas fa-database"></i> Meal Database</a></li>
+                <li><a href="#nutrition-tracker" class="nav-link"><i class="fas fa-chart-line"></i> Nutrition</a></li>
+                <li><a href="#meal-prep" class="nav-link"><i class="fas fa-clock"></i> Meal Prep</a></li>
+                <li><a href="#grocery-stores" class="nav-link"><i class="fas fa-store"></i> Grocery Stores</a></li>
+                <li><a href="#meal-sharing" class="nav-link"><i class="fas fa-share-alt"></i> Share</a></li>
+                <li><a href="#dietary-filters" class="nav-link"><i class="fas fa-filter"></i> Dietary Filters</a></li>
+                <li><a href="#shopping-list" class="nav-link"><i class="fas fa-shopping-cart"></i> Shopping List</a></li>
+                <li><a href="#add-meal" class="nav-link"><i class="fas fa-plus"></i> Add Meal</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Weekly Plan Section -->
+            <section id="weekly-plan" class="section active">
+                <h2><i class="fas fa-calendar-week"></i> Weekly Meal Plan</h2>
+                <div class="week-grid">
+                    <div class="day-card" data-day="Monday">
+                        <h3>Monday</h3>
+                        <div class="meals-container">
+                            <div class="meal-slot breakfast">
+                                <h4><i class="fas fa-sun"></i> Breakfast</h4>
+                                <div class="meal-item" data-category="breakfast">
+                                    <span class="meal-name">Pancakes</span>
+                                    <button class="remove-meal" onclick="removeMeal('Monday', 'breakfast')"><i class="fas fa-times"></i></button>
+                                </div>
+                            </div>
+                            <div class="meal-slot lunch">
+                                <h4><i class="fas fa-sun"></i> Lunch</h4>
+                                <div class="meal-item" data-category="lunch">
+                                    <span class="meal-name">Caesar Salad</span>
+                            <i class="fab fa-pinterest"></i>
+                            <span>Pinterest</span>
+                        </a>
+                        <a href="https://tiktok.com/@mealplanner" target="_blank" class="social-link tiktok" onclick="trackSocialClick('tiktok')">
+                            <i class="fab fa-tiktok"></i>
+                            <span>TikTok</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Meal Planner. Plan your meals, save time, and eat better!</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Social Media Widget -->
+    <div class="floating-social" id="floating-social">
+        <div class="social-toggle" onclick="toggleFloatingSocial()">
+            <i class="fas fa-share-alt"></i>
+        </div>
+        <div class="social-menu" id="social-menu">
+            <a href="https://instagram.com/mealplanner" target="_blank" class="floating-social-link instagram" onclick="trackSocialClick('instagram')">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/1234567890" target="_blank" class="floating-social-link whatsapp" onclick="trackSocialClick('whatsapp')">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://t.me/mealplanner" target="_blank" class="floating-social-link telegram" onclick="trackSocialClick('telegram')">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://facebook.com/mealplanner" target="_blank" class="floating-social-link facebook" onclick="trackSocialClick('facebook')">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/mealplanner" target="_blank" class="floating-social-link twitter" onclick="trackSocialClick('twitter')">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
